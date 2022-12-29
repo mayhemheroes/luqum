@@ -1,0 +1,9 @@
+project: luqum
+target: fuzz-qry
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_qry.py
+    libfuzzer: true
+    timeout: 12
